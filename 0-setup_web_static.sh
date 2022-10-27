@@ -23,5 +23,5 @@ chown -hR ubuntu:ubuntu /data
 # Add alias to serve the content of /data/web_static/current to hbnb_static
 sed -i '51i\\tlocation /hbnb_static/ {\n\t\talias /data/web_static/current/;\n\t}\n' /etc/nginx/sites-available/default
 
-#  Restart the nginx service
+# Restart the nginx service
 service nginx restart
